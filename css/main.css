@@ -4601,12 +4601,12 @@ main {
     font-weight: 500;
 }
 
-.estado-en-floración,
+.estado-en-floraciï¿½n,
 .estado-cosecha-activa,
-.estado-preparación,
-.estado-floración-continua,
+.estado-preparaciï¿½n,
+.estado-floraciï¿½n-continua,
 .estado-en-crecimiento,
-.estado-maduración {
+.estado-maduraciï¿½n {
     background: var(--color-petalo-suave);
     color: var(--color-negro-tierra);
 }
@@ -4878,7 +4878,7 @@ main {
 
 .gallery-overlay h3 {
     color: var(--color-blanco-nieve);
-    margin-bottom: var(--espacio-pequeño);
+    margin-bottom: var(--espacio-pequeï¿½o);
     font-size: 1.3rem;
 }
 
