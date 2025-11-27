@@ -1,0 +1,881 @@
+
+@keyframes crecimientoFloral {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    60% {
+        opacity: 0.8;
+        transform: scale(1.02) translateY(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes flotarSuave {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-8px) rotate(0.5deg);
+    }
+    50% {
+        transform: translateY(-4px) rotate(-0.3deg);
+    }
+    75% {
+        transform: translateY(-12px) rotate(0.2deg);
+    }
+}
+
+@keyframes aparecerDesdeAbajo {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecerDesdeIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecerDesdeDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes escalaSuave {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulsoWhatsApp {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 16px rgba(37, 211, 102, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 4px 24px rgba(37, 211, 102, 0.4);
+    }
+}
+
+@keyframes brillarBoton {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(90, 78, 166, 0.2);
+    }
+    50% {
+        box-shadow: 0 6px 24px rgba(90, 78, 166, 0.4);
+    }
+}
+
+@keyframes rotarLento {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate-fade-in {
+    animation: crecimientoFloral 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animate-float {
+    animation: flotarSuave 4s ease-in-out infinite;
+}
+
+.animate-slide-up {
+    animation: aparecerDesdeAbajo 0.6s ease-out;
+}
+
+.animate-slide-left {
+    animation: aparecerDesdeIzquierda 0.6s ease-out;
+}
+
+.animate-slide-right {
+    animation: aparecerDesdeDerecha 0.6s ease-out;
+}
+
+.animate-scale {
+    animation: escalaSuave 0.5s ease-out;
+}
+
+.animate-whatsapp-pulse {
+    animation: pulsoWhatsApp 2s ease-in-out infinite;
+}
+
+.animate-button-glow {
+    animation: brillarBoton 2s ease-in-out infinite;
+}
+
+@keyframes movimientoPetalo {
+    0%, 100% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: rotate(1.5deg) translateX(2px) translateY(-1px);
+    }
+    50% {
+        transform: rotate(-0.8deg) translateX(-1.5px) translateY(0.5px);
+    }
+    75% {
+        transform: rotate(1.2deg) translateX(1px) translateY(-0.5px);
+    }
+}
+
+@keyframes crecimientoOrganico {
+    0% {
+        transform: scaleY(0.1) scaleX(0.8);
+        opacity: 0.3;
+    }
+    30% {
+        transform: scaleY(0.7) scaleX(0.9);
+        opacity: 0.7;
+    }
+    70% {
+        transform: scaleY(1.1) scaleX(1.02);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes balanceoTallos {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(1deg);
+    }
+    40% {
+        transform: rotate(-0.5deg);
+    }
+    60% {
+        transform: rotate(0.8deg);
+    }
+    80% {
+        transform: rotate(-0.3deg);
+    }
+}
+
+@keyframes aparicionEscalonada {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotate(-5deg);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05) rotate(2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes brilloRocio {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes polenFlotante {
+    0% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translateY(-15px) translateX(5px) rotate(90deg);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateY(-25px) translateX(-3px) rotate(180deg);
+        opacity: 0.7;
+    }
+    75% {
+        transform: translateY(-15px) translateX(2px) rotate(270deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0px) translateX(0px) rotate(360deg);
+        opacity: 0.6;
+    }
+}
+
+@keyframes sombraNatural {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(90, 78, 166, 0.15);
+    }
+    50% {
+        box-shadow: 0 8px 24px rgba(90, 78, 166, 0.25);
+    }
+}
+
+@keyframes headerShrink {
+    0% {
+        padding: 1.5rem 0;
+        background: rgba(255, 255, 255, 0.95);
+    }
+    100% {
+        padding: 0.75rem 0;
+        background: rgba(255, 255, 255, 0.98);
+    }
+}
+
+@keyframes enfoqueNatural {
+    0% {
+        filter: blur(2px);
+        opacity: 0.8;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes cargaOrganica {
+    0% {
+        transform: scaleX(0.1) scaleY(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scaleX(0.8) scaleY(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 1;
+    }
+}
+
+.hero-section .hero-text {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-section .hero-image {
+    animation: fadeInDown 1s ease-out 0.4s both;
+}
+
+.site-header.shrink {
+    animation: headerShrink 0.3s ease-out;
+}
+
+.product-card {
+    animation: aparicionEscalonada 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation-delay: calc(var(--index, 0) * 0.1s);
+}
+
+.product-card:hover .product-image img {
+    animation: movimientoPetalo 3s ease-in-out infinite;
+}
+
+.product-card:hover {
+    animation: sombraNatural 2s ease-in-out infinite;
+}
+
+.btn:hover {
+    animation: brillarBoton 1.5s ease-in-out infinite;
+}
+
+.logo:hover {
+    animation: balanceoTallos 2s ease-in-out infinite;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animate-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-header h2 {
+    animation: crecimientoOrganico 1s cubic-bezier(0.23, 1, 0.32, 1) 0.3s both;
+}
+
+.section-header p {
+    animation: aparicionEscalonada 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.5s both;
+}
+
+.testimonial-card {
+    animation: aparicionEscalonada 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation-delay: calc(var(--testimonial-index, 0) * 0.2s);
+}
+
+.testimonial-card:hover {
+    animation: flotarSuave 3s ease-in-out infinite;
+}
+
+.whatsapp-float {
+    animation: pulsoWhatsApp 3s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+    animation: brillarBoton 1s ease-in-out infinite;
+}
+
+.cart-indicator.animate-in {
+    animation: aparicionEscalonada 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cart-modal.animate-in .cart-content {
+    animation: aparicionEscalonada 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+input:focus, textarea:focus {
+    animation: enfoqueNatural 0.3s ease-out;
+}
+
+.loading {
+    animation: cargaOrganica 1.5s ease-in-out infinite;
+}
+
+.nav-menu li a::after {
+    animation: crecimientoOrganico 0.3s ease-out;
+}
+
+.btn::before {
+    animation: brilloRocio 2s ease-in-out infinite;
+}
+
+.product-image:hover img {
+    animation: movimientoPetalo 2s ease-in-out;
+}
+
+.footer-social a:hover {
+    animation: balanceoTallos 1s ease-out;
+}
+
+.animate-pulse {
+    animation: pulsoWhatsApp 2s ease-in-out infinite;
+}
+
+.animate-float-subtle {
+    animation: flotarSuave 6s ease-in-out infinite;
+}
+
+.animate-grow {
+    animation: crecimientoOrganico 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animate-stagger {
+    animation: aparicionEscalonada 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation-delay: calc(var(--stagger-index, 0) * 0.1s);
+}
+
+.loading-spinner {
+    animation: cargaOrganica 1s ease-in-out infinite;
+}
+
+.success-bounce {
+    animation: aparicionEscalonada 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.error-shake {
+    animation: balanceoTallos 0.5s ease-in-out;
+}
+
+.btn:active {
+    animation: sombraNatural 0.2s ease-out;
+}
+
+.cart-indicator.pulse {
+    animation: brillarBoton 1s ease-in-out;
+}
+
+.page-transition {
+    animation: enfoqueNatural 0.5s ease-out;
+}
+
+.skeleton {
+    animation: cargaOrganica 1.5s ease-in-out infinite;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+}
+
+.notification {
+    animation: aparicionEscalonada 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.notification.success {
+    animation: crecimientoOrganico 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.notification.error {
+    animation: balanceoTallos 0.5s ease-in-out;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+.morph-on-hover {
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.morph-on-hover:hover {
+    border-radius: 50% 20% 50% 20%;
+    transform: rotate(2deg) scale(1.05);
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.glass-effect:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid var(--color-polen-dorado);
+    white-space: nowrap;
+    animation: typewriter 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--color-polen-dorado);
+    }
+}
+
+@keyframes particleFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--color-polen-dorado);
+    border-radius: 50%;
+    animation: particleFloat 4s ease-in-out infinite;
+    animation-delay: calc(var(--particle-index, 0) * 0.5s);
+}
+
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+}
+
+.breathe {
+    animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) rotate(-5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) rotate(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.image-zoom {
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.image-zoom:hover {
+    transform: scale(1.1) rotate(1deg);
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.counter {
+    animation: countUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation-delay: calc(var(--counter-index, 0) * 0.1s);
+}
+
+.hero-badge {
+    animation: escalaSuave 0.8s ease-out 0.8s both;
+}
+
+.product-card {
+    animation: crecimientoFloral 0.6s ease-out both;
+    animation-delay: calc(var(--delay, 0) * 0.1s);
+}
+
+.product-card:nth-child(1) { --delay: 1; }
+.product-card:nth-child(2) { --delay: 2; }
+.product-card:nth-child(3) { --delay: 3; }
+
+.testimonial-card {
+    animation: slideInLeft 0.8s ease-out both;
+    animation-delay: calc(var(--testimonial-delay, 0) * 0.2s);
+}
+
+.testimonial-card:nth-child(1) { --testimonial-delay: 1; }
+.testimonial-card:nth-child(2) { --testimonial-delay: 2; }
+.testimonial-card:nth-child(3) { --testimonial-delay: 3; }
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+[data-animate].animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-card:hover .product-image img {
+    animation: flotarSuave 2s ease-in-out;
+}
+
+.btn:hover {
+    animation: brillarBoton 1s ease-out;
+}
+
+.loading-skeleton {
+    background: linear-gradient(90deg,
+        rgba(255, 255, 255, 0.1) 25%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.1) 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.btn:active {
+    animation: button-press 0.1s ease-out;
+}
+
+@keyframes button-press {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:focus,
+a:focus {
+    animation: focus-ring 0.3s ease-out;
+}
+
+@keyframes focus-ring {
+    0% {
+        box-shadow: 0 0 0 0 rgba(90, 78, 166, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 4px rgba(90, 78, 166, 0.3);
+    }
+}
+
+.product-added {
+    animation: product-added-feedback 0.6s ease-out;
+}
+
+@keyframes product-added-feedback {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 16px rgba(90, 78, 166, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 32px rgba(90, 78, 166, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 16px rgba(90, 78, 166, 0.2);
+    }
+}
+
+.page-transition {
+    animation: page-fade-in 0.5s ease-out;
+}
+
+@keyframes page-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mobile-menu-enter {
+    animation: slideInRight 0.3s ease-out;
+}
+
+.mobile-menu-exit {
+    animation: slideInRight 0.3s ease-out reverse;
+}
+
+.parallax-element {
+    transform: translateY(var(--parallax-offset, 0));
+    transition: transform 0.1s linear;
+}
+
+.success-message {
+    animation: success-bounce 0.6s ease-out;
+}
+
+@keyframes success-bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.error-message {
+    animation: error-shake 0.5s ease-out;
+}
+
+@keyframes error-shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .animate-float,
+    .animate-whatsapp-pulse,
+    .animate-button-glow {
+        animation: none;
+    }
+}
+
+.animate-on-scroll,
+.product-card,
+.btn,
+.hero-image img {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@media (max-resolution: 1dppx) and (max-width: 1024px) {
+    .animate-float,
+    .animate-whatsapp-pulse {
+        animation-duration: 6s;
+    }
+
+    .product-card:hover .product-image img {
+        animation: none;
+        transform: scale(1.02);
+    }
+}
+
+.animate-on-scroll:not(.animate-in) {
+    animation: none;
+}
+
+@media (prefers-reduced-data: reduce) {
+    .animate-float,
+    .animate-whatsapp-pulse,
+    .animate-button-glow {
+        animation: none;
+    }
+
+    .product-card:hover {
+        transform: translateY(-4px);
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .product-card:hover .product-image img {
+        animation: none;
+    }
+
+    .btn:hover {
+        animation: none;
+    }
+}
+
+.animate-on-scroll {
+    will-change: transform, opacity;
+}
+
+.animate-on-scroll.animate-in {
+    will-change: auto;
+}
+
+

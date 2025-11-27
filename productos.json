@@ -1,0 +1,355 @@
+{
+  "productos": [
+    {
+      "id": "ROS001",
+      "nombre": "Rosa Roja Premium",
+      "descripcion": "Rosas rojas de tallo largo cultivadas en Cundinamarca. Perfectas para arreglos florales y eventos especiales.",
+      "categoria": "rosas",
+      "precio": 2500,
+      "precioMayorista": 1800,
+      "unidad": "unidad",
+      "minimoCompra": 50,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "60-80 cm",
+        "duracion": "8-10 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "100": 5,
+        "200": 10,
+        "500": 15,
+        "1000": 20
+      }
+    },
+    {
+      "id": "ROS002",
+      "nombre": "Rosa Blanca Elegante",
+      "descripcion": "Rosas blancas puras, símbolo de pureza y elegancia. Ideales para bodas y eventos formales.",
+      "categoria": "rosas",
+      "precio": 2400,
+      "precioMayorista": 1700,
+      "unidad": "unidad",
+      "minimoCompra": 50,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1518887665167-de7be40e687e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "55-75 cm",
+        "duracion": "7-9 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "100": 5,
+        "200": 10,
+        "500": 15,
+        "1000": 20
+      }
+    },
+    {
+      "id": "ROS003",
+      "nombre": "Rosa Rosa Delicado",
+      "descripcion": "Rosas de color rosa suave, perfectas para composiciones románticas y decoraciones delicadas.",
+      "categoria": "rosas",
+      "precio": 2300,
+      "precioMayorista": 1600,
+      "unidad": "unidad",
+      "minimoCompra": 50,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "50-70 cm",
+        "duracion": "8-10 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "100": 5,
+        "200": 10,
+        "500": 15,
+        "1000": 20
+      }
+    },
+    {
+      "id": "CLA001",
+      "nombre": "Clavel Rojo Vibrante",
+      "descripcion": "Claveles rojos intensos, tradicionales en la floricultura colombiana. Excelente durabilidad.",
+      "categoria": "claveles",
+      "precio": 1200,
+      "precioMayorista": 900,
+      "unidad": "unidad",
+      "minimoCompra": 100,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "40-60 cm",
+        "duracion": "10-12 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "200": 8,
+        "500": 12,
+        "1000": 18,
+        "2000": 22
+      }
+    },
+    {
+      "id": "CLA002",
+      "nombre": "Clavel Blanco Puro",
+      "descripcion": "Claveles blancos tradicionales, versátiles para cualquier composición floral.",
+      "categoria": "claveles",
+      "precio": 1150,
+      "precioMayorista": 850,
+      "unidad": "unidad",
+      "minimoCompra": 100,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "40-60 cm",
+        "duracion": "10-12 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "200": 8,
+        "500": 12,
+        "1000": 18,
+        "2000": 22
+      }
+    },
+    {
+      "id": "GIR001",
+      "nombre": "Girasol Dorado",
+      "descripcion": "Girasoles frescos y vibrantes, cultivados con técnicas tradicionales colombianas.",
+      "categoria": "girasoles",
+      "precio": 1800,
+      "precioMayorista": 1300,
+      "unidad": "unidad",
+      "minimoCompra": 25,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1464822759844-d150f38d609c?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "80-120 cm",
+        "duracion": "6-8 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Primavera-Verano"
+      },
+      "descuentoVolumen": {
+        "50": 5,
+        "100": 10,
+        "200": 15,
+        "500": 20
+      }
+    },
+    {
+      "id": "TUL001",
+      "nombre": "Tulipán Holandés Importado",
+      "descripcion": "Tulipanes premium importados de Holanda, con garantía de frescura y calidad.",
+      "categoria": "tulipanes",
+      "precio": 3200,
+      "precioMayorista": 2500,
+      "unidad": "unidad",
+      "minimoCompra": 50,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "35-45 cm",
+        "duracion": "5-7 días",
+        "origen": "Importado de Holanda",
+        "temporada": "Invierno-Primavera"
+      },
+      "descuentoVolumen": {
+        "100": 8,
+        "200": 12,
+        "500": 18,
+        "1000": 25
+      }
+    },
+    {
+      "id": "ORN001",
+      "nombre": "Planta Ornamental Bambú",
+      "descripcion": "Bambú decorativo en macetas, perfecto para arreglos y decoraciones comerciales.",
+      "categoria": "ornamentales",
+      "precio": 8500,
+      "precioMayorista": 6500,
+      "unidad": "maceta",
+      "minimoCompra": 10,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "60-80 cm",
+        "duracion": "Viva (planta)",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "20": 5,
+        "50": 10,
+        "100": 15,
+        "200": 20
+      }
+    },
+    {
+      "id": "ORN002",
+      "nombre": "Helecho Boston",
+      "descripcion": "Helechos verdes exuberantes, ideales para composiciones tropicales y decoraciones.",
+      "categoria": "ornamentales",
+      "precio": 6200,
+      "precioMayorista": 4800,
+      "unidad": "maceta",
+      "minimoCompra": 15,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "30-45 cm",
+        "duracion": "Viva (planta)",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "30": 5,
+        "50": 10,
+        "100": 15,
+        "200": 20
+      }
+    },
+    {
+      "id": "LIL001",
+      "nombre": "Lirio Blanco Elegante",
+      "descripcion": "Lirios blancos con aroma delicado, perfectos para eventos y composiciones premium.",
+      "categoria": "lirios",
+      "precio": 4100,
+      "precioMayorista": 3200,
+      "unidad": "tallo",
+      "minimoCompra": 25,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "70-90 cm",
+        "duracion": "7-10 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "50": 8,
+        "100": 12,
+        "200": 18,
+        "500": 25
+      }
+    },
+    {
+      "id": "CRI001",
+      "nombre": "Crisantemo Amarillo",
+      "descripcion": "Crisantemos vibrantes en tonos amarillos, excelentes para arreglos coloridos.",
+      "categoria": "crisantemos",
+      "precio": 1600,
+      "precioMayorista": 1200,
+      "unidad": "unidad",
+      "minimoCompra": 30,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "25-35 cm",
+        "duracion": "10-14 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "50": 5,
+        "100": 10,
+        "200": 15,
+        "500": 20
+      }
+    },
+    {
+      "id": "ALC001",
+      "nombre": "Alcatraz Blanco",
+      "descripcion": "Alcatraces blancos tradicionales colombianos, símbolo de paz y pureza.",
+      "categoria": "alcatraces",
+      "precio": 2800,
+      "precioMayorista": 2100,
+      "unidad": "unidad",
+      "minimoCompra": 40,
+      "disponibilidad": "disponible",
+      "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&crop=center",
+      "caracteristicas": {
+        "altura": "45-65 cm",
+        "duracion": "8-12 días",
+        "origen": "Finca Daniel Angarita, Cundinamarca",
+        "temporada": "Todo el año"
+      },
+      "descuentoVolumen": {
+        "80": 8,
+        "150": 12,
+        "300": 18,
+        "600": 25
+      }
+    }
+  ],
+  "categorias": [
+    {
+      "id": "rosas",
+      "nombre": "Rosas",
+      "descripcion": "Rosas frescas cultivadas con pasión",
+      "icono": "🌹"
+    },
+    {
+      "id": "claveles",
+      "nombre": "Claveles",
+      "descripcion": "Claveles tradicionales colombianos",
+      "icono": "🌺"
+    },
+    {
+      "id": "girasoles",
+      "nombre": "Girasoles",
+      "descripcion": "Girasoles vibrantes y energéticos",
+      "icono": "🌻"
+    },
+    {
+      "id": "tulipanes",
+      "nombre": "Tulipanes",
+      "descripcion": "Tulipanes premium importados",
+      "icono": "🌷"
+    },
+    {
+      "id": "ornamentales",
+      "nombre": "Ornamentales",
+      "descripcion": "Plantas decorativas y follaje",
+      "icono": "🌿"
+    },
+    {
+      "id": "lirios",
+      "nombre": "Lirios",
+      "descripcion": "Lirios elegantes y aromáticos",
+      "icono": "🪻"
+    },
+    {
+      "id": "crisantemos",
+      "nombre": "Crisantemos",
+      "descripcion": "Crisantemos duraderos y coloridos",
+      "icono": "🌼"
+    },
+    {
+      "id": "alcatraces",
+      "nombre": "Alcatraces",
+      "descripcion": "Alcatraces colombianos tradicionales",
+      "icono": "🌸"
+    }
+  ],
+  "metadata": {
+    "ultimaActualizacion": "2025-11-23",
+    "version": "1.0",
+    "totalProductos": 12,
+    "totalCategorias": 8,
+    "cultivo": "Finca Daniel Angarita, Cundinamarca, Colombia",
+    "especialidad": "Flores frescas para mayoristas",
+    "contacto": {
+      "telefono": "+57 300 123 4567",
+      "email": "daniel@floresdanielangarita.com",
+      "whatsapp": "https://wa.me/573001234567"
+    }
+  }
+}

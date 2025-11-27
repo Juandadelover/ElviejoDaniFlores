@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!-- Apple Touch Icon - Versión grande del favicon -->
+  <defs>
+    <linearGradient id="appleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5A4EA6"/>
+      <stop offset="50%" style="stop-color:#689BA6"/>
+      <stop offset="100%" style="stop-color:#9BBFBF"/>
+    </linearGradient>
+    <filter id="appleShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#5A4EA6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo circular sutil -->
+  <circle cx="90" cy="90" r="85" fill="#F8F9FA" opacity="0.1"/>
+
+  <!-- Tallo principal -->
+  <path d="M90,160 Q95,120 92,80 Q90,60 90,40"
+        stroke="#689BA6"
+        stroke-width="4"
+        fill="none"
+        stroke-linecap="round"/>
+
+  <!-- Hojas asimétricas -->
+  <path d="M92,110 Q105,105 100,95 Q95,100 92,110 Z"
+        fill="#9BBFBF"
+        opacity="0.9"/>
+  <path d="M88,130 Q75,125 80,115 Q85,120 88,130 Z"
+        fill="#9BBFBF"
+        opacity="0.9"/>
+
+  <!-- Flor central grande -->
+  <g transform="translate(90, 40)">
+    <!-- Pétalos irregulares -->
+    <ellipse cx="0" cy="0" rx="8" ry="15" fill="#F2BB13" transform="rotate(0)"/>
+    <ellipse cx="0" cy="0" rx="8" ry="15" fill="#F2BB13" transform="rotate(45)"/>
+    <ellipse cx="0" cy="0" rx="8" ry="15" fill="#F2BB13" transform="rotate(90)"/>
+    <ellipse cx="0" cy="0" rx="8" ry="15" fill="#F2BB13" transform="rotate(135)"/>
+    <!-- Centro con detalle -->
+    <circle cx="0" cy="0" r="6" fill="#BF8211"/>
+    <circle cx="0" cy="0" r="3" fill="#F2BB13"/>
+  </g>
+
+  <!-- Inicial "D" más elaborada -->
+  <g transform="translate(45, 70)">
+    <path d="M5,15 Q5,5 15,5 L25,5 Q35,5 35,15 L35,35 Q35,45 25,45 L15,45 Q5,45 5,35 Z"
+          fill="none"
+          stroke="url(#appleGradient)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M15,15 L25,15 Q30,15 30,20 L30,30 Q30,35 25,35 L15,35"
+          fill="none"
+          stroke="url(#appleGradient)"
+          stroke-width="3"
+          stroke-linecap="round"/>
+  </g>
+</svg>
