@@ -269,17 +269,19 @@ input:focus, textarea:focus, select:focus {
 }
 
 .btn-outline {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
     color: var(--color-blanco-nieve);
-    border: 2px solid var(--color-blanco-nieve);
-    font-weight: 500;
+    border: 2.5px solid var(--color-blanco-nieve);
+    font-weight: 600;
+    backdrop-filter: blur(5px);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .btn-outline:hover {
     background-color: var(--color-blanco-nieve);
     color: var(--color-tierra-humeda);
     border-color: var(--color-blanco-nieve);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
 
 .btn-small {
@@ -796,11 +798,34 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(44, 44, 44, 0.7) 0%, rgba(44, 44, 44, 0.7) 100%), 
-                url('../images/flores/flores-angarita-generate-1764081576489.png') center/cover no-repeat;
-    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
     z-index: 0;
 }
 
@@ -857,23 +882,24 @@ main {
 
 .hero-title {
     font-size: clamp(2.2rem, 5vw, 3.2rem);
-    font-weight: 300;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: var(--espacio-grande);
     color: var(--color-blanco-nieve);
     font-family: var(--fuente-hero);
     letter-spacing: -0.02em;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
     word-spacing: normal;
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #9BBFBF 0%, #F2BB13 100%);
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     display: inline-block;
-    font-weight: 500;
+    font-weight: 700;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .hero-subtitle {
@@ -881,13 +907,14 @@ main {
     line-height: 1.8;
     margin-bottom: var(--espacio-mega);
     opacity: 1;
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 300;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     letter-spacing: 0.02em;
     font-family: var(--fuente-hero);
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
 
 .hero-actions {
@@ -1243,10 +1270,34 @@ main {
 
 .hero-nosotros-bg {
     position: absolute;
-    inset: 0; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.hero-nosotros-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.3) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-nosotros-bg .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
     z-index: 0;
 }
 
@@ -2053,15 +2104,16 @@ main {
 }
 
 .testimonial-card {
-    background: var(--color-blanco-nieve);
-    border-radius: 16px 12px 16px 12px;
+    background: linear-gradient(135deg, var(--color-blanco-nieve) 0%, rgba(248, 249, 250, 0.9) 100%);
+    border-radius: 20px;
     padding: var(--espacio-grande);
-    box-shadow: var(--sombra-suave);
-    border: 2px solid rgba(155, 191, 191, 0.1);
-    /* Removida la transición para eliminar animaciones en tarjeta */
-    transition: none;
+    box-shadow: 0 4px 20px rgba(90, 78, 166, 0.12);
+    border: 2px solid rgba(155, 191, 191, 0.2);
     position: relative;
     overflow: hidden;
+    transition: all var(--transicion-media);
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial-card::before {
@@ -2070,66 +2122,59 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: var(--flor-accent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.testimonial-card:hover::before {
-    opacity: 1;
+    height: 5px;
+    background: linear-gradient(90deg, var(--color-polen-dorado), var(--color-rocio-manana), var(--color-tierra-humeda));
+    opacity: 0.8;
 }
 
 .testimonial-card:hover {
-    /* eliminar transform y animaciones al pasar el cursor */
-    transform: none;
-    box-shadow: var(--sombra-suave);
-    border-color: rgba(155, 191, 191, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(90, 78, 166, 0.2);
+    border-color: rgba(104, 155, 166, 0.4);
+}
+
+.testimonial-badge {
+    font-size: 1rem;
+    margin-bottom: var(--espacio-medio);
+    letter-spacing: 2px;
 }
 
 .testimonial-story {
-    margin-bottom: var(--espacio-grande);
+    margin-bottom: auto;
 }
 
 .testimonial-text {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--color-gris-piedra);
     margin-bottom: var(--espacio-medio);
     font-style: italic;
     position: relative;
+    padding-left: var(--espacio-grande);
 }
 
 .testimonial-text::before {
     content: '"';
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--color-polen-dorado);
     position: absolute;
-    top: -10px;
-    left: -15px;
+    top: -15px;
+    left: -5px;
     font-family: Georgia, serif;
-}
-
-.testimonial-text::after {
-    content: '"';
-    font-size: 2rem;
-    color: var(--color-polen-dorado);
-    position: absolute;
-    bottom: -20px;
-    right: -15px;
-    font-family: Georgia, serif;
+    opacity: 0.6;
 }
 
 .testimonial-context {
-    background: rgba(242, 187, 19, 0.1);
-    padding: var(--espacio-pequeno) var(--espacio-medio);
-    border-radius: 8px;
-    margin-bottom: var(--espacio-medio);
+    background: linear-gradient(135deg, rgba(242, 187, 19, 0.08) 0%, rgba(104, 155, 166, 0.05) 100%);
+    padding: var(--espacio-medio);
+    border-radius: 12px;
+    margin: var(--espacio-grande) 0;
+    border-left: 3px solid var(--color-polen-dorado);
 }
 
 .context-detail {
-    font-size: 0.9rem;
-    color: var(--color-tallo-maduro);
+    font-size: 0.95rem;
+    color: var(--color-tierra-humeda);
     font-weight: 600;
     margin: 0;
 }
@@ -2138,17 +2183,19 @@ main {
     display: flex;
     align-items: center;
     gap: var(--espacio-medio);
-    padding-top: var(--espacio-medio);
-    border-top: 1px solid var(--color-petalo-suave);
+    padding-top: var(--espacio-grande);
+    border-top: 2px solid rgba(155, 191, 191, 0.15);
+    margin-top: auto;
 }
 
 .author-photo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--color-petalo-suave);
     flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(90, 78, 166, 0.15);
 }
 
 .author-info {
@@ -2160,22 +2207,24 @@ main {
     font-weight: 700;
     color: var(--color-negro-tierra);
     display: block;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.05rem;
 }
 
 .author-title {
     color: var(--color-gris-piedra);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     display: block;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
 }
 
 .author-relationship {
-    color: var(--color-rocio-manana);
-    font-size: 0.8rem;
+    color: var(--color-polen-dorado);
+    font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
 }
 
 .testimonials-footer {
