@@ -220,8 +220,6 @@ class LaEsperanzaFlores {
     }
 
     setupScrollAnimations() {
-        // Animaciones de scroll desactivadas
-        // Las tarjetas de testimonios no deben animarse
         return;
     }
 

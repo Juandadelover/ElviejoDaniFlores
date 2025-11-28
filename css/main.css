@@ -3411,7 +3411,6 @@ main {
     margin-top: var(--espacio-pequeno);
 }
 
-/* Mejoras para pantallas grandes */
 @media (min-width: 1200px) {
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -5720,7 +5719,6 @@ main {
     }
 }
 
-/* Estilos para la sección de beneficios */
 .benefits {
     background: linear-gradient(135deg, rgba(90, 78, 166, 0.05) 0%, rgba(255, 255, 255, 0.1) 100%);
     padding: 5rem 0;

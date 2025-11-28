@@ -1,16 +1,9 @@
-// Animaciones para LA ESPERANZA FLORES
-// DESACTIVADAS: Las animaciones de testimonios han sido removidas
-
 document.addEventListener('DOMContentLoaded', () => {
-    // setupAnimations removido - sin animaciones de scroll
 });
 
-// Stub function - no animations applied
 function setupAnimations() {
-    // No animations
 }
 
-// Animaciones adicionales si es necesario
 const style = document.createElement('style');
 style.textContent = `
     @keyframes fadeInUp {

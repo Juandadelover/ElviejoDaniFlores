@@ -1,11 +1,7 @@
-/* TODAS LAS ANIMACIONES HAN SIDO DESACTIVADAS */
-
-/* Desactivar globalmente todo */
 * {
     animation: none !important;
 }
 
-/* Desactivar animaciones específicas */
 .testimonial-card,
 .benefit-item,
 .animate-on-scroll,
@@ -16,7 +12,6 @@
     transform: none !important;
 }
 
-/* Mantener visibilidad */
 .testimonial-card,
 .benefit-item {
     opacity: 1;
@@ -402,12 +397,10 @@
 }
 
 .testimonial-card {
-    /* Animaciones desactivadas */
     animation: none;
 }
 
 .testimonial-card:hover {
-    /* Animación hover desactivada */
     animation: none;
 }
 
@@ -896,11 +889,9 @@ a:focus {
 }
 
 .animate-on-scroll {
-    /* sin animaciones */
 }
 
 .animate-on-scroll.animate-in {
-    /* sin animaciones */
 }
 
 
