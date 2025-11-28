@@ -2058,7 +2058,8 @@ main {
     padding: var(--espacio-grande);
     box-shadow: var(--sombra-suave);
     border: 2px solid rgba(155, 191, 191, 0.1);
-    transition: var(--transicion-media);
+    /* Removida la transición para eliminar animaciones en tarjeta */
+    transition: none;
     position: relative;
     overflow: hidden;
 }
@@ -2080,9 +2081,10 @@ main {
 }
 
 .testimonial-card:hover {
-    transform: translateY(-8px) rotate(0.5deg);
-    box-shadow: var(--sombra-media);
-    border-color: rgba(104, 155, 166, 0.2);
+    /* eliminar transform y animaciones al pasar el cursor */
+    transform: none;
+    box-shadow: var(--sombra-suave);
+    border-color: rgba(155, 191, 191, 0.1);
 }
 
 .testimonial-story {
