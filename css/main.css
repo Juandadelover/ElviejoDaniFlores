@@ -2020,6 +2020,26 @@ main {
     opacity: 0.7;
 }
 
+.footer-legal .legal-links {
+    display: flex;
+    gap: var(--espacio-medio);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-legal .legal-links a {
+    color: var(--color-polen-dorado);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transicion-corta);
+}
+
+.footer-legal .legal-links a:hover {
+    color: var(--color-blanco-nieve);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .footer-content {
         grid-template-columns: 1fr;
@@ -5610,6 +5630,94 @@ main {
 
     .hero-subtitle {
         color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+/* Estilos para la sección de beneficios */
+.benefits {
+    background: linear-gradient(135deg, rgba(90, 78, 166, 0.05) 0%, rgba(255, 255, 255, 0.1) 100%);
+    padding: 5rem 0;
+}
+
+.benefits .section-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.benefits .section-header h2 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 1rem;
+    color: var(--color-tierra-humeda);
+}
+
+.benefits .section-header p {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.benefits-grid {
+    gap: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(90, 78, 166, 0.1);
+}
+
+.benefit-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    color: var(--color-tierra-humeda);
+}
+
+.benefit-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.benefit-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-tierra-humeda);
+}
+
+.benefit-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .benefits-grid.grid-3 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .benefit-item {
+        padding: 1.5rem 1rem;
+    }
+
+    .benefit-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.75rem;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .benefit-item p {
+        font-size: 0.9rem;
     }
 }
 

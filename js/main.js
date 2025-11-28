@@ -15,7 +15,6 @@ class FloresDanielAngarita {
         this.setupPageAnimations();
         this.loadPageSpecificFeatures();
 
-        this.showWelcomeMessage();
     }
 
     getValidImageUrl(imagenPath, nombreProducto, categoria) {
@@ -211,26 +210,6 @@ class FloresDanielAngarita {
 
     getCurrentPage() {
         return window.location.pathname.split('/').pop() || 'index.html';
-    }
-
-    showNotification(message, type = 'info') {
-
-        const notification = document.createElement('div');
-        notification.className = `notification notification-${type}`;
-        notification.innerHTML = `
-            <div class="notification-content">
-                <span class="notification-message">${message}</span>
-                <button class="notification-close" onclick="this.parentElement.parentElement.remove()">×</button>
-            </div>
-        `;
-
-        document.body.appendChild(notification);
-
-        setTimeout(() => {
-            if (notification.parentElement) {
-                notification.remove();
-            }
-        }, 5000);
     }
 
     setupScrollEffects() {
@@ -543,16 +522,6 @@ class FloresDanielAngarita {
             whatsappFloat.classList.add('pulse');
             setTimeout(() => whatsappFloat.classList.remove('pulse'), 1000);
         }, 3000);
-    }
-
-    showWelcomeMessage() {
-        const hasVisited = localStorage.getItem('floresDanielVisited');
-        if (!hasVisited) {
-            setTimeout(() => {
-                this.showNotification('🌸 ¡Bienvenido a Flores Daniel Angarita! Cultivamos con pasión desde 2018', 'success');
-                localStorage.setItem('floresDanielVisited', 'true');
-            }, 2000);
-        }
     }
 }
 
