@@ -1259,10 +1259,10 @@ main {
 .hero-nosotros {
     position: relative;
     color: var(--color-blanco-nieve);
-    padding: var(--espacio-grande) 0;
+    padding: var(--espacio-mega) 0;
     text-align: center;
     overflow: hidden;
-    height: 450px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3299,11 +3299,9 @@ main {
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 800;
     margin-bottom: var(--espacio-medio);
-    background: linear-gradient(45deg, var(--color-blanco-nieve), rgba(255, 255, 255, 0.9));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #5A4EA6;
     line-height: 1.1;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-contacto .hero-subtitle {
@@ -3411,6 +3409,43 @@ main {
     font-size: 0.9rem;
     font-style: italic;
     margin-top: var(--espacio-pequeno);
+}
+
+/* Mejoras para pantallas grandes */
+@media (min-width: 1200px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--espacio-extra);
+    }
+
+    .contact-card {
+        padding: var(--espacio-extra);
+    }
+
+    .contact-icon {
+        font-size: 4rem;
+        margin-bottom: var(--espacio-grande);
+    }
+
+    .contact-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: var(--espacio-grande);
+    }
+
+    .contact-card p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: var(--espacio-grande);
+    }
+
+    .contact-link {
+        font-size: 1.2rem;
+        padding: var(--espacio-medio) var(--espacio-grande);
+    }
+
+    .contact-note {
+        font-size: 1rem;
+    }
 }
 
 .form-section {
@@ -5189,9 +5224,10 @@ main {
     flex-direction: column;
     align-items: center;
     gap: var(--espacio-grande);
-    padding: var(--espacio-extra);
+    padding: var(--espacio-grande) var(--espacio-grande);
     background: linear-gradient(135deg, var(--color-gris-nube) 0%, rgba(155, 191, 191, 0.1) 100%);
     border-radius: 16px;
+    margin-top: var(--espacio-grande);
 }
 
 .gallery-cta p {
