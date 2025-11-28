@@ -1,34 +1,13 @@
 // Animaciones para Flores Daniel Angarita
+// DESACTIVADAS: Las animaciones de testimonios han sido removidas
 
 document.addEventListener('DOMContentLoaded', () => {
-    setupAnimations();
+    // setupAnimations removido - sin animaciones de scroll
 });
 
+// Stub function - no animations applied
 function setupAnimations() {
-    // Animaciones de entrada suave
-    const animateElements = document.querySelectorAll('.animate-on-scroll');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    });
-
-    animateElements.forEach(element => {
-        observer.observe(element);
-    });
-
-    // Animación de fade-in para elementos de la página
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach((element, index) => {
-        element.style.setProperty('--delay', `${index * 0.1}s`);
-        element.classList.add('animate-in');
-    });
+    // No animations
 }
 
 // Animaciones adicionales si es necesario

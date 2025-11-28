@@ -41,7 +41,7 @@ class FloresDanielAngarita {
         const texto = encodeURIComponent(nombre.substring(0, 20));
         const categoriaTexto = encodeURIComponent(categoria);
 
-        return `https:
+        return `https://via.placeholder.com/200x280?text=${texto}&bg=${color.replace('#', '')}&textColor=fff`;
     }
 
     setupEventListeners() {
@@ -220,40 +220,9 @@ class FloresDanielAngarita {
     }
 
     setupScrollAnimations() {
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-
-                    const delay = index * 100;
-                    setTimeout(() => {
-                        entry.target.classList.add('animate-in');
-                    }, delay);
-                }
-            });
-        }, observerOptions);
-
-        const animateElements = document.querySelectorAll('.animate-on-scroll');
-        animateElements.forEach((element, index) => {
-            element.style.setProperty('--index', index);
-            observer.observe(element);
-        });
-
-        const productCards = document.querySelectorAll('.product-card');
-        productCards.forEach((card, index) => {
-            card.style.setProperty('--index', index);
-            observer.observe(card);
-        });
-
-        const sections = document.querySelectorAll('.section');
-        sections.forEach((section, index) => {
-            section.style.setProperty('--section-index', index);
-            observer.observe(section);
-        });
+        // Animaciones de scroll desactivadas
+        // Las tarjetas de testimonios no deben animarse
+        return;
     }
 
     setupHeaderScrollEffect() {
