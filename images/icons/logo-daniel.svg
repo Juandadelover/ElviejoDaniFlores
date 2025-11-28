@@ -1,12 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" class="logo-svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" class="logo-svg">
   <!-- Definiciones para gradientes y patrones únicos -->
   <defs>
-    <!-- Gradiente personalizado para el texto -->
+    <!-- Gradiente personalizado para el texto principal -->
     <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#5A4EA6;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#689BA6;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#9BBFBF;stop-opacity:1" />
     </linearGradient>
+
+    <!-- Gradiente dorado para flores -->
+    <radialGradient id="florGradient" cx="35%" cy="35%">
+      <stop offset="0%" style="stop-color:#F4C624;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F2BB13;stop-opacity:1" />
+    </radialGradient>
 
     <!-- Patrón de pétalos sutil -->
     <pattern id="petalPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -15,51 +21,101 @@
 
     <!-- Sombra personalizada -->
     <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="2" dy="2" stdDeviation="1" flood-color="#5A4EA6" flood-opacity="0.3"/>
+      <feDropShadow dx="2" dy="2" stdDeviation="1.5" flood-color="#5A4EA6" flood-opacity="0.25"/>
     </filter>
   </defs>
 
-  <!-- Elemento floral decorativo único -->
-  <g class="logo-floral" transform="translate(5, 15)">
-    <!-- Tallo curvo único -->
-    <path d="M15,35 Q20,25 18,15 Q16,10 15,5"
+  <!-- Elemento floral decorativo - Flor de esperanza -->
+  <g class="logo-floral" transform="translate(8, 12)">
+    <!-- Tallos múltiples cruzados -->
+    <path d="M12,42 Q15,30 14,18 Q13,8 12,2"
           stroke="#689BA6"
-          stroke-width="2"
+          stroke-width="2.5"
           fill="none"
-          stroke-linecap="round"/>
+          stroke-linecap="round"
+          opacity="0.9"/>
+    
+    <path d="M18,40 Q20,28 18,16"
+          stroke="#9BBFBF"
+          stroke-width="1.5"
+          fill="none"
+          stroke-linecap="round"
+          opacity="0.6"/>
 
-    <!-- Hoja asimétrica -->
-    <path d="M18,20 Q25,18 22,12 Q20,15 18,20 Z"
+    <!-- Hojas asimétricas -->
+    <path d="M14,28 Q22,26 20,20 Q19,23 14,28 Z"
           fill="#9BBFBF"
-          opacity="0.8"/>
+          opacity="0.85"/>
+    
+    <path d="M16,15 Q24,14 23,8 Q22,11 16,15 Z"
+          fill="#689BA6"
+          opacity="0.7"/>
 
-    <!-- Flor personalizada - no un círculo perfecto -->
-    <g transform="translate(15, 5)">
-      <!-- Pétalos irregulares -->
-      <ellipse cx="0" cy="0" rx="3" ry="5" fill="#F2BB13" transform="rotate(0)"/>
-      <ellipse cx="0" cy="0" rx="3" ry="5" fill="#F2BB13" transform="rotate(45)"/>
-      <ellipse cx="0" cy="0" rx="3" ry="5" fill="#F2BB13" transform="rotate(90)"/>
-      <ellipse cx="0" cy="0" rx="3" ry="5" fill="#F2BB13" transform="rotate(135)"/>
-      <!-- Centro único -->
-      <circle cx="0" cy="0" r="1.5" fill="#BF8211"/>
+    <!-- Flor principal - rosa esperanza -->
+    <g transform="translate(12, 4)">
+      <!-- Pétalos exteriores grandes -->
+      <ellipse cx="0" cy="-4" rx="3.5" ry="5.5" fill="url(#florGradient)" transform="rotate(0)"/>
+      <ellipse cx="3.5" cy="-2" rx="3.5" ry="5.5" fill="url(#florGradient)" transform="rotate(72)"/>
+      <ellipse cx="2" cy="4" rx="3.5" ry="5.5" fill="url(#florGradient)" transform="rotate(144)"/>
+      <ellipse cx="-3.5" cy="2" rx="3.5" ry="5.5" fill="url(#florGradient)" transform="rotate(216)"/>
+      <ellipse cx="-2" cy="-4" rx="3.5" ry="5.5" fill="url(#florGradient)" transform="rotate(288)"/>
+      
+      <!-- Pétalos interiores más pequeños -->
+      <ellipse cx="0" cy="-2" rx="2" ry="3" fill="#FDD835" opacity="0.9"/>
+      <ellipse cx="2" cy="0" rx="2" ry="3" fill="#FDD835" opacity="0.9" transform="rotate(72)"/>
+      <ellipse cx="1" cy="2" rx="2" ry="3" fill="#FDD835" opacity="0.9" transform="rotate(144)"/>
+      
+      <!-- Centro distintivo -->
+      <circle cx="0" cy="0" r="2" fill="#BF8211"/>
+      <circle cx="0" cy="0" r="1" fill="#D49B22" opacity="0.6"/>
+    </g>
+
+    <!-- Flor secundaria pequeña -->
+    <g transform="translate(20, 12)">
+      <ellipse cx="0" cy="-2.5" rx="2" ry="3.5" fill="#F2BB13" opacity="0.8"/>
+      <ellipse cx="2" cy="-1" rx="2" ry="3.5" fill="#F2BB13" opacity="0.8" transform="rotate(90)"/>
+      <ellipse cx="0" cy="1.5" rx="2" ry="3.5" fill="#F2BB13" opacity="0.8" transform="rotate(180)"/>
+      <ellipse cx="-2" cy="-1" rx="2" ry="3.5" fill="#F2BB13" opacity="0.8" transform="rotate(270)"/>
+      <circle cx="0" cy="0" r="1.2" fill="#BF8211"/>
     </g>
   </g>
 
-  <!-- Texto principal con personalidad -->
-  <text x="45" y="25" class="logo-texto-principal" fill="url(#logoGradient)" filter="url(#logoShadow)">
-    Flores Daniel
+  <!-- Texto principal - LA ESPERANZA -->
+  <text x="55" y="28" class="logo-texto-principal" 
+        font-family="'Inter', sans-serif" 
+        font-size="18" 
+        font-weight="700" 
+        fill="url(#logoGradient)" 
+        filter="url(#logoShadow)"
+        letter-spacing="0.5">
+    LA ESPERANZA
   </text>
 
-  <!-- Texto secundario más pequeño -->
-  <text x="45" y="40" class="logo-texto-secundario" fill="#689BA6">
-    Angarita
+  <!-- Texto secundario - FLORES -->
+  <text x="55" y="47" class="logo-texto-secundario" 
+        font-family="'Inter', sans-serif" 
+        font-size="14" 
+        font-weight="600" 
+        fill="#F2BB13"
+        letter-spacing="1.2">
+    FLORES
   </text>
 
-  <!-- Elemento decorativo único - línea curva -->
-  <path d="M45,45 Q80,50 120,45"
+  <!-- Elementos decorativos únicos - líneas esperanza -->
+  <path d="M55,52 Q120,56 180,52"
         stroke="#9BBFBF"
-        stroke-width="1"
+        stroke-width="1.5"
         fill="none"
-        opacity="0.5"
-        stroke-dasharray="2,3"/>
+        opacity="0.4"
+        stroke-dasharray="3,2"/>
+  
+  <!-- Punto decorativo de esperanza -->
+  <circle cx="52" cy="30" r="2.5" fill="#F2BB13" opacity="0.6"/>
+  
+  <!-- Elemento floral pequeño decorativo en esquina -->
+  <g transform="translate(225, 12)">
+    <ellipse cx="0" cy="-2" rx="1.5" ry="2.5" fill="#689BA6" opacity="0.5"/>
+    <ellipse cx="1.5" cy="0" rx="1.5" ry="2.5" fill="#689BA6" opacity="0.5" transform="rotate(90)"/>
+    <circle cx="0" cy="0" r="0.8" fill="#5A4EA6" opacity="0.4"/>
+  </g>
 </svg>

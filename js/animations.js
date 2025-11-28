@@ -1,4 +1,4 @@
-// Animaciones para Flores Daniel Angarita
+// Animaciones para LA ESPERANZA FLORES
 // DESACTIVADAS: Las animaciones de testimonios han sido removidas
 
 document.addEventListener('DOMContentLoaded', () => {

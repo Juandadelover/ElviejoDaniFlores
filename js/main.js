@@ -1,5 +1,5 @@
 
-class FloresDanielAngarita {
+class LaEsperanzaFlores {
     constructor() {
         this.currentPage = this.getCurrentPage();
         this.user = this.loadUserData();
@@ -7,7 +7,7 @@ class FloresDanielAngarita {
     }
 
     init() {
-        console.log('🌸 Bienvenido a Flores Daniel Angarita - Especialistas en flores frescas');
+        console.log('🌸 Bienvenido a LA ESPERANZA FLORES - Especialistas en flores frescas');
 
         this.setupEventListeners();
         this.setupMobileMenu();
@@ -495,7 +495,7 @@ class FloresDanielAngarita {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.floresDaniel = new FloresDanielAngarita();
+    window.laEsperanzaFlores = new LaEsperanzaFlores();
 });
 
 
